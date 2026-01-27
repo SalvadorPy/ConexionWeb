@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    position: fixed;
+    z-index: 1;
+    
+    background-color: #053636;
+}
+.container__menu{
+    max-width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 89px;
+    height:69;
+     
+}
+.menu{
+    display: flex;
+    align-items: center;
+    
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 36px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff344;
+    text-transform: uppercase;
+}
+.container__cover{
+    width: 100%;
+    height: 800px;
+   background-position: right;
+   background: linear-gradient( rgba(5, 7, 12, 0.35), rgba(5, 7, 12, 0.35)), url(imagenes/fondo.jpg) center
+   center fixed;
+   background-size: cover;
+   
+
+}
+.cover{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container__cover .text h1{
+    font-size: 46px;
+    font-weight: 600;
+    color: #fff344;
+}
+.container__cover .text p{
+    font-size: 28px;
+    position: relative;
+    margin-top: 40px;
+    color: #fffef1;
+}
+.container__cover .text input{
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background-color: #053636;
+    color: rgb(23, 255, 236);
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #005250;
+    transition: all 300ms;
+}
+.container__cover input:hover{
+    box-shadow: 1px 1px 30px -6px #005250;
+}
+.container__cover .svg img{
+    width: 600px;
+
+}
+.container__cover .svg img{
+    width: 600px;
+    animation: move-vector 2s linear infinite;
+}
+
+@keyframes move-vector{
+    0%{
+        transform: translateY(15px);
+
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}

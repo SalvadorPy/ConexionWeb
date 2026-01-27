@@ -1,0 +1,22 @@
+form{
+    background-color:#464242b3 ;
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    color: #999;
+    border-radius: 20px;
+  
+}
+.field:focus{
+    border-color: darkgreen;
+}
+*{
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    max-width:100%;
+    padding:8px;
+    resize:vertical;
+}
